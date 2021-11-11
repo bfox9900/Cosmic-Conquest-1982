@@ -690,7 +690,7 @@ decimal
       key?
       IF    ( player has pressed a key)
          OBEY-COMMAND
-         \ -1 LEN + !
+         -1 LEN +!    ( corrected use of plus-store operator) 
          \ COMPUTER-TURN
          100 ms
       ENDIF
